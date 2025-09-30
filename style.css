@@ -8,20 +8,25 @@ body{
     height: 100vh;
 }
 nav{
+    position: sticky;
     text-align: left;
     background-color: black;
-    color: white
+    color: white;
+    padding: 10px;
 }
 nav ul span a{
     text-decoration: none;
+    font-size: 20px;
+    margin-left: 650px;
     color: #e4adad;
-    text-shadow: 0 0 5px #e4adad, 0 0 5px #e4adad, 0 0 5px #ff8080, 0 0 5px #ff8080, 0 0 5px #ff8080;
+    text-shadow: 0 0 5px #e4adad, 0 0 10px #e4adad, 0 0 15px #ff8080, 0 0 20px #ff8080, 0 0 25px #ff8080;
 }
 nav ul span a:hover{
-    color:#ffc9c9;
-    text
+    color: #ffc9c9;
+    text-shadow: 0 0 5px #ffc9c9, 0 0 10px #ffc9c9, 0 0 20px #ffc9c9, 0 0 30px #ffc9c9;
 }
 nav ul li{
-    display:inline;
+    display: inline;
     margin: 15px;
+    font-size: 20px;
 }
