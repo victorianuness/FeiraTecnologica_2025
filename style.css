@@ -1,32 +1,69 @@
+@font-face {
+    font-family: Paris;
+    src: url(font/Paris\ Forbel\ TTF.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    background-image: radial-gradient(ellipse at top left,#ffffff, #111);
+    background-image: radial-gradient(ellipse at top left,#93BEE6, #4c7499, #43596d);
     height: 100vh;
 }
 nav{
+    z-index: 999;
     position: sticky;
-    text-align: left;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     background-color: black;
     color: white;
     padding: 10px;
 }
-nav ul span a{
+nav ul {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+nav ul li a{
+    font-family: Paris;
     text-decoration: none;
     font-size: 20px;
-    margin-left: 650px;
-    color: #e4adad;
-    text-shadow: 0 0 5px #e4adad, 0 0 10px #e4adad, 0 0 15px #ff8080, 0 0 20px #ff8080, 0 0 25px #ff8080;
+    color: white;
 }
-nav ul span a:hover{
-    color: #ffc9c9;
-    text-shadow: 0 0 5px #ffc9c9, 0 0 10px #ffc9c9, 0 0 20px #ffc9c9, 0 0 30px #ffc9c9;
+nav ul li a:hover{
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
 }
-nav ul li{
-    display: inline;
-    margin: 15px;
+
+nav ul li .contato{
+    text-decoration: none;
     font-size: 20px;
+    color: #b6d6f0;
+    text-shadow: 0 0 5px #436078, 0 0 10px #436078, 0 0 15px #436078, 0 0 20px #436078, 0 0 25px #ff8080;
+}
+nav ul li .contato:hover{
+    color: #b6d6f0;
+    text-shadow: 0 0 5px #b6d6f0, 0 0 10px #b6d6f0, 0 0 20px #b6d6f0, 0 0 30px #b6d6f0;
+}
+nav ul li {
+    display: inline;
+    margin: 10px;
+    font-size: 20px;
+    transition: transform 0.2s, opacity 0.5s;
+}
+ul li a{
+    transition: 0.4s;
+    display: block;
+}
+ul:hover li a{
+    opacity: 0.4;
+}
+nav ul li a:hover {
+    opacity: 1;
+    transform: scale(1.15);
 }
