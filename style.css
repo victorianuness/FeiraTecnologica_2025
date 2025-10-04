@@ -2,6 +2,14 @@
     font-family: Paris;
     src: url(font/Paris\ Forbel\ TTF.ttf);
 }
+@font-face {
+    font-family: Apple;
+    src: url(font/AppleGaramond-Light.ttf);
+}
+@font-face {
+    font-family: AppleItalic;
+    src: url(font/AppleGaramond-Italic.ttf);
+}
 
 *{
     margin: 0;
@@ -11,6 +19,7 @@
 body{
     background-image: radial-gradient(ellipse at top left,#93BEE6, #4c7499, #43596d);
     height: 100vh;
+    background-attachment: fixed;
 }
 nav{
     z-index: 999;
@@ -66,4 +75,19 @@ ul:hover li a{
 nav ul li a:hover {
     opacity: 1;
     transform: scale(1.15);
+}
+header{
+    text-align: center;
+    margin: 50px;
+    color: white;
+}
+header h1{
+    font-size:120px;
+    font-family: Apple;
+}
+header h2{
+    margin-top:30px;
+    margin-bottom: 20px;
+    font-size: 45px;
+    font-family: AppleItalic;
 }
