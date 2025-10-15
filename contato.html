@@ -1,106 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conheça os Desenvolvedores</title>
     <style>
-        .avatar {
-  width: 150px;      
-  height: 150px;         
-  border-radius: 50%;    
-  object-fit: cover;     
-  border: 2px solid #ccc; 
-}
+        body {
+            background-color: #222379;
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #222379 0%, #386ba1 100%);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin: 40px 0 10px;
+            font-size: 40px;
+            font-weight: 700;
+            color: #e1e1e1;
+        }
+
+        p.subtitulo {
+            color: #ebebeb;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        /* ==== CONTAINER ==== */
+        .devs-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 40px;
+            width: 90%;
+            max-width: 1400px;
+            padding-bottom: 60px;
+        }
+
+        /* ==== CARD BASE ==== */
+        .card {
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease;
+            min-height: 580px;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card-header {
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            position: relative;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            bottom: -70px;
+        }
+
+        .card-body {
+            padding: 110px 25px 25px;
+            text-align: center;
+            background-color: #fff;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+        }
+
+        .card-body h2 {
+            font-size: 22px;
+            margin-top: 10px;
+            color: #111;
+        }
+
+        .role {
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .bio {
+            font-size: 14px;
+            color: #444;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .skills,
+        .contribution {
+            text-align: left;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        .skills strong,
+        .contribution strong {
+            color: #000;
+        }
+
+        .links {
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 18px;
+            border-radius: 8px;
+            margin: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            color: white;
+            background-color: #333;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #000;
+        }
+
+        /* ==== CORES DE CADA DEV ==== */
+        .joao .card-header {
+            background: linear-gradient(135deg, #6cb8ff, #4b77be);
+        }
+
+        .juliana .card-header {
+            background: linear-gradient(135deg, #ff9ab5, #ff5678);
+        }
+
+        .mariana .card-header {
+            background: linear-gradient(135deg, #8ef5b5, #4caf50);
+        }
+
+        .rebeca .card-header {
+            background: linear-gradient(135deg, #ffe57f, #ffb347);
+        }
+
+        .victoria .card-header {
+            background: linear-gradient(135deg, #c6a6ff, #835af1);
+        }
     </style>
 </head>
 
 <body>
-    <section id="Devs">
-        <article class="dev-card" data-name="Victoria Nunes" data-role="Back-end" data-bio="oioi">
 
-            <div class="grid">
-                <div class="card">
+    <h1>👩‍💻 Conheça os Desenvolvedores</h1>
+    <p class="subtitulo">Equipe responsável pela criação, estilização e organização do projeto</p>
+
+    <section class="devs-container">
+
+        <div class="top-row">
+            <div class="card joao">
+                <div class="card-header">
+                    <img src="img/joao.jpg" alt="Foto de João Gabini" class="avatar">
+                </div>
+                <div class="card-body">
                     <h2>João Gabini</h2>
-                    <img src="img/" alt="Foto" class="avatar">
-                    <p>Full-Stack</p>
-                    <div class="price">LinkedIn</div>
-                    <button class="btn primary" onclick.window.location="https://globo.com">Saiba Mais!</button><br></br>
-                    <div class="price">GitHub</div>
-                    <button class="btn primary"><a href="https://github.com/JoaoGabini" target="_blank" class="btn">Saiba Mais!</a> </button> 
-
+                    <p class="role">Full-Stack Developer</p>
+                    <p class="bio">Focado e prático, João sempre busca soluções rápidas e eficientes para o projeto.</p>
+                    <p class="skills"><strong>Habilidades:</strong> HTML, CSS, JavaScript, React</p>
+                    <p class="contribution"><strong>Contribuição:</strong> Desenvolvimento das páginas em HTML e
+                        colaboração no CSS, estruturando a base visual do site.</p>
+                    <div class="links">
+                        <a href="#" class="btn">LinkedIn</a>
+                        <a href="https://github.com/JoaoGabini" target="_blank" class="btn">GitHub</a>
+                    </div>
                 </div>
-    </section>
+            </div>
 
-
-    <section id="Devs">
-        <article class="dev-card" data-name="Juliana" data-role="Front-end" data-bio="oioi">
-
-            <div class="grid">
-                <div class="card">
+            <div class="card juliana">
+                <div class="card-header">
+                    <img src="img/juliana.jpg" alt="Foto de Juliana Barbosa" class="avatar">
+                </div>
+                <div class="card-body">
                     <h2>Juliana Barbosa</h2>
-                    <img src="img/" alt="Foto" class="avatar">
-                    <p>Back-end</p>
-                    <div class="price">LinkedIn</div>
-                    <button class="btn primary">Saiba Mais!</button><br></br>
-                    <div class="price">GitHub</div>
-                    <button class="btn primary"><a href="" target="_blank" class="btn">Saiba Mais!</a> </button> 
-
+                    <p class="role">Back-end Developer</p>
+                    <p class="bio">Com atenção aos detalhes, Juliana garante que cada parte do projeto esteja coerente e
+                        bem estruturada.</p>
+                    <p class="skills"><strong>Habilidades:</strong> HTML, Coleta e organização de dados, Análise de
+                        conteúdo</p>
+                    <p class="contribution"><strong>Contribuição:</strong> Desenvolvimento das páginas em HTML e coleta
+                        dos dados que seriam exibidos no site.</p>
+                    <div class="links">
+                        <a href="#" class="btn">LinkedIn</a>
+                        <a href="#" class="btn">GitHub</a>
+                    </div>
                 </div>
-    </section>
+            </div>
+        </div>
 
-
-    <section id="Devs">
-        <article class="dev-card" data-name="Mariana" data-role="Front-end" data-bio="oioi">
-
-            <div class="grid">
-                <div class="card">
+        <div class="bottom-row">
+            <div class="card mariana">
+                <div class="card-header">
+                    <img src="img/mariana.jpg" alt="Foto de Mariana Hangai" class="avatar">
+                </div>
+                <div class="card-body">
                     <h2>Mariana Hangai</h2>
-                    <img src="img/" alt="Foto" class="avatar">
-                    <p>Front-end</p>
-                    <div class="price">LinkedIn</div>
-                    <button class="btn primary">Saiba Mais!</button><br></br>
-                    <div class="price">GitHub</div>
-                    <button class="btn primary"><a href="" target="_blank" class="btn">Saiba Mais!</a> </button> 
-
+                    <p class="role">Front-end Developer</p>
+                    <p class="bio">Criativa e atenta à estética, Mariana dá vida aos dados através de uma interface
+                        amigável e bonita.</p>
+                    <p class="skills"><strong>Habilidades:</strong> Coleta e curadoria de informações, Design e
+                        organização visual</p>
+                    <p class="contribution"><strong>Contribuição:</strong> Responsável pela coleta e organização dos
+                        dados e pelo design da interface do site.</p>
+                    <div class="links">
+                        <a href="#" class="btn">LinkedIn</a>
+                        <a href="#" class="btn">GitHub</a>
+                    </div>
                 </div>
-    </section>
+            </div>
 
-
-    <section id="Devs">
-        <article class="dev-card" data-name="Rebeca Santos" data-role="Back-end" data-bio="oioi">
-
-            <div class="grid">
-                <div class="card">
+            <div class="card rebeca">
+                <div class="card-header">
+                    <img src="img/rebeca.jpg" alt="Foto de Rebeca Santos" class="avatar">
+                </div>
+                <div class="card-body">
                     <h2>Rebeca Santos</h2>
-                    <img src="img/" alt="Foto" class="avatar">
-                    <p>Back-end</p>
-                    <div class="price">LinkedIn</div>
-                    <button class="btn primary">Saiba Mais!</button><br></br>
-                    <div class="price">GitHub</div>
-                    <button class="btn primary"><a href="https://github.com/rehsanva" target="_blank" class="btn">Saiba Mais!</a> </button> 
-
+                    <p class="role">Back-end Developer</p>
+                    <p class="bio">Analítica, empática e criativa, Rebeca busca harmonia entre funcionalidade e
+                        estética.</p>
+                    <p class="skills"><strong>Habilidades:</strong> HTML, CSS, Coleta e curadoria de dados, Organização
+                    </p>
+                    <p class="contribution"><strong>Contribuição:</strong> Desenvolvimento do HTML, colaboração no CSS e
+                        participação na coleta e tratamento das informações apresentadas no site.</p>
+                    <div class="links">
+                        <a href="#" class="btn">LinkedIn</a>
+                        <a href="https://github.com/rehsanva" target="_blank" class="btn">GitHub</a>
+                    </div>
                 </div>
-    </section>
+            </div>
 
-
-    <section id="Devs">
-        <article class="dev-card" data-name="Victoria Nunes" data-role="Back-end" data-bio="oioi">
-
-            <div class="grid">
-                <div class="card">
+            <div class="card victoria">
+                <div class="card-header">
+                    <img src="img/victoria.jpg" alt="Foto de Victoria Nunes" class="avatar">
+                </div>
+                <div class="card-body">
                     <h2>Victoria Américo Nunes</h2>
-                    <img src="img/" alt="Foto" class="avatar">
-                    <p>Back-end</p>
-                    <div class="price">LinkedIn</div>
-                    <button class="btn primary">Saiba Mais!</button><br></br>
-                    <div class="price">GitHub</div>
-                    <button class="btn primary"><a href="https://github.com/victorianuness" target="_blank" class="btn">Saiba Mais!</a> </button> 
-
+                    <p class="role">Back-end Developer</p>
+                    <p class="bio">Responsável e dedicada, Victoria é essencial para a estrutura e organização do
+                        código.</p>
+                    <p class="skills"><strong>Habilidades:</strong> HTML, Organização de conteúdo, Trabalho em equipe
+                    </p>
+                    <p class="contribution"><strong>Contribuição:</strong> Desenvolvimento das páginas em HTML e apoio
+                        na organização geral do projeto.</p>
+                    <div class="links">
+                        <a href="#" class="btn">LinkedIn</a>
+                        <a href="https://github.com/victorianuness" target="_blank" class="btn">GitHub</a>
+                    </div>
                 </div>
+            </div>
+        </div>
+
     </section>
+
 </body>
 
 </html>
