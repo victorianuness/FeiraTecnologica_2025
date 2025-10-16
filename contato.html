@@ -39,7 +39,6 @@
             margin-bottom: 40px;
         }
 
-        /* ==== CONTAINER ==== */
         .devs-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -49,7 +48,6 @@
             padding-bottom: 60px;
         }
 
-        /* ==== CARD BASE ==== */
         .card {
             border-radius: 20px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -86,8 +84,6 @@
             padding: 110px 25px 25px;
             text-align: center;
             background-color: #fff;
-            border-top-left-radius: 40px;
-            border-top-right-radius: 40px;
         }
 
         .card-body h2 {
@@ -141,7 +137,6 @@
             background-color: #000;
         }
 
-        /* ==== CORES DE CADA DEV ==== */
         .joao .card-header {
             background: linear-gradient(135deg, #6cb8ff, #4b77be);
         }
@@ -161,12 +156,30 @@
         .victoria .card-header {
             background: linear-gradient(135deg, #c6a6ff, #835af1);
         }
+        .voltar {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 30px;
+            text-decoration: none;
+            color: #4b4b4b;
+            background-color: #e9e2e2;
+            padding: 15px;
+            margin: 20px;
+            margin-left: 30px;
+            border-radius: 20%;
+            border: 2.25px solid #b0b6ec;
+        }
+        .voltar:hover{
+            background-color: #b0b6ec;
+            color: rgb(98, 125, 211);
+        }
     </style>
 </head>
 
 <body>
-
-    <h1>👩‍💻 Conheça os Desenvolvedores</h1>
+    <a href="index.html" class="voltar">Voltar</a>
+    <h1>Conheça os Desenvolvedores</h1>
     <p class="subtitulo">Equipe responsável pela criação, estilização e organização do projeto</p>
 
     <section class="devs-container">
@@ -179,7 +192,7 @@
                 <div class="card-body">
                     <h2>João Gabini</h2>
                     <p class="role">Full-Stack</p>
-                    <p class="bio">Focado e prático, João sempre busca soluções rápidas e eficientes para o projeto.</p>
+                    <p class="bio">Focado e prático</p>
                     <p class="skills"><strong>Habilidades:</strong> HTML e CSS</p>
                     <p class="contribution"><strong>Contribuição:</strong> Desenvolvimento das páginas em HTML e
                         colaboração no CSS, estruturando a base visual do site.</p>
@@ -197,8 +210,7 @@
                 <div class="card-body">
                     <h2>Juliana Barbosa</h2>
                     <p class="role">Back-end </p>
-                    <p class="bio"> Juliana garante que cada parte do projeto esteja coerente e
-                        bem estruturada.</p>
+                    <p class="bio">Organização e estruturação de dados.</p>
                     <p class="skills"><strong>Habilidades:</strong> HTML e CSS</p>
                     <p class="contribution"><strong>Contribuição:</strong> Desenvolvimento das páginas em HTML e coleta
                         dos dados que seriam exibidos no site.</p>
@@ -218,8 +230,7 @@
                 <div class="card-body">
                     <h2>Mariana Hangai</h2>
                     <p class="role">Front-end </p>
-                    <p class="bio"> Mariana dá vida aos dados através de uma interface
-                        amigável e bonita.</p>
+                    <p class="bio"> Criação de interface e design.</p>
                     <p class="skills"><strong>Habilidades:</strong> HTML e CSS</p>
                     <p class="contribution"><strong>Contribuição:</strong> Responsável pela coleta e organização dos
                         dados e pelo design da interface do site.</p>
@@ -237,8 +248,7 @@
                 <div class="card-body">
                     <h2>Rebeca Santos</h2>
                     <p class="role">Back-end</p>
-                    <p class="bio"> Rebeca busca harmonia entre funcionalidade e
-                        estética.</p>
+                    <p class="bio">Funcionalidade e estética.</p>
                     <p class="skills"><strong>Habilidades:</strong> HTML e CSS
                     </p>
                     <p class="contribution"><strong>Contribuição:</strong> Desenvolvimento do HTML, colaboração no CSS e
@@ -255,10 +265,9 @@
                     <img src="IMGCONTATO/VIC.JPEG" alt="Foto de Victoria Nunes" class="avatar">
                 </div>
                 <div class="card-body">
-                    <h2>Victoria Américssso Nunes</h2>
+                    <h2>Victoria Américo Nunes</h2>
                     <p class="role">Back-end Developer</p>
-                    <p class="bio">Victoria é essencial para a estrutura e organização do
-                        código.</p>
+                    <p class="bio">Estrutura do código e organização.</p>
                     <p class="skills"><strong>Habilidades:</strong> HTML e CSS
                     </p>
                     <p class="contribution"><strong>Contribuição:</strong> Desenvolvimento das páginas em HTML e apoio
