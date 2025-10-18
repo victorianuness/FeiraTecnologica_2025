@@ -125,7 +125,12 @@ header .container{
     text-align: center;
     font-family: Apple;
 }
+#personagens h2{
+    margin: 20px;
+    font-size: 40px;
+}
 #personagens p{
+    margin: 20px;
     font-size: 23px;
     text-align: justify;
 }
@@ -166,6 +171,7 @@ h1 {
     gap: 20px;
 }
 #narcoticos ul li{
+
     padding: 20px;
     font-size: 30px;
     margin-bottom: 10px;
@@ -209,7 +215,6 @@ h1 {
     justify-content: center;
 }
 #sinopse p {
-    font-family: Apple; 
     font-size: 26px; 
     line-height: 1.6;
     color: #f0f8ff; 
@@ -242,8 +247,8 @@ h1 {
     gap: 20px;
 }
 #autora .container1 img{
-    width: 600px;
-    height: 500px;
+    width: 1000px;
+    height: 450px;
     object-fit: cover;
     border-radius: 5%;
     margin-right: 20px;
@@ -251,3 +256,93 @@ h1 {
     justify-content: flex-end;
     align-items: center;
 }
+#narcoticos .flexcard{
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 10px;
+grid-row-gap: 9px;
+}
+#narcoticos .card1 
+{ grid-area: 1 / 1 / 3 / 3;
+    background-color: rgba(255, 255, 255, 0.336);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 25px;
+}
+
+#narcoticos .card2 
+{ grid-area: 1 / 3 / 3 / 5;
+    background-color: rgba(255, 255, 255, 0.336);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px;
+}
+
+#narcoticos .card3
+{ grid-area: 1 / 5 / 3 / 7;
+    background-color: rgba(255, 255, 255, 0.336);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px;
+}
+
+#narcoticos .card4 
+{ grid-area: 3 / 1 / 5 / 4; 
+background-color: rgba(255, 255, 255, 0.336);
+border-radius: 20px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.3);
+padding: 15px;
+}
+
+#narcoticos .card5
+{ grid-area: 3 / 4 / 5 / 7;
+  background-color: rgba(255, 255, 255, 0.336);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 15px;
+}
+
+/*.parent {
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+grid-template-rows: repeat(10, 1fr);
+grid-column-gap: 15px;
+grid-row-gap: 9px;
+display: flex;
+}
+
+.igor { 
+    grid-area: 1 / 1 / 6 / 3; 
+    background-color: rgba(255, 255, 255, 0.336);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px;
+}
+.pai {
+    grid-area: 6 / 1 / 11 / 3;
+}
+.mae { 
+    grid-area: 1 / 3 / 6 / 5; 
+}
+.sergio { 
+    grid-area: 6 / 3 / 11 / 5; 
+}
+.cdf { 
+    grid-area: 1 / 5 / 6 / 7; 
+}
+.karina { 
+    grid-area: 6 / 5 / 11 / 7; 
+}
+.tia { 
+    grid-area: 1 / 7 / 6 / 9; 
+}
+.juliana { 
+    grid-area: 6 / 7 / 11 / 9; 
+}*/
