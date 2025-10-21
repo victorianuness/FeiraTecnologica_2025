@@ -11,6 +11,13 @@
     src: url(font/AppleGaramond-Italic.ttf);
 }
 
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+}
 *{
     margin: 0;
     padding: 0;
