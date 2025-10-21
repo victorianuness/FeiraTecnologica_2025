@@ -11,13 +11,7 @@
     src: url(font/AppleGaramond-Italic.ttf);
 }
 
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 0;
-    }
-}
+
 *{
     margin: 0;
     padding: 0;
@@ -26,6 +20,7 @@
 html{
     scroll-behavior: smooth;
 }
+
 body{
     background-image: radial-gradient(ellipse at top left, #3a4d5f 0%, #223344 60%, #181c22 100%);
     height: 100vh;
@@ -36,6 +31,7 @@ p{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
+@media screen and(max-width: 768px){
 nav{
     z-index: 999;
     position: sticky;
@@ -46,6 +42,7 @@ nav{
     background-color: black;
     color: white;
     padding: 10px;
+}
 }
 nav ul {
     display: inline-flex;
