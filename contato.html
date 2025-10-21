@@ -174,11 +174,65 @@
             cursor: pointer;
             background: rgb(139, 193, 255);
         }
+
         .shadow__btn:hover {
             box-shadow: 0 0 5px rgb(139, 193, 255),
                 0 0 25px rgb(139, 193, 255),
                 0 0 50px rgb(139, 193, 255),
                 0 0 100px rgb(139, 193, 255);
+        }
+
+        @media (min-width: 1201px) {
+            .devs-container {
+                grid-template-columns: repeat(auto-fit, minmax(340px, 400px));
+                justify-content: center;
+            }
+        }
+
+
+        @media (max-width: 1200px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .devs-container {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 30px;
+                width: 95%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+                margin-top: 80px;
+            }
+
+            p.subtitulo {
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+
+            .devs-container {
+                grid-template-columns: 1fr;
+                width: 90%;
+                gap: 25px;
+            }
+
+            .card {
+                min-height: auto;
+            }
+
+            .shadow__btn {
+                position: fixed;
+                top: 15px;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 8px 15px;
+                font-size: 14px;
+                letter-spacing: 2px;
+                z-index: 1000;
+            }
         }
     </style>
 </head>
@@ -203,7 +257,8 @@
                     <p class="contribution"><strong>Contribuição:</strong> Desenvolvimento das páginas em HTML e
                         colaboração no CSS, estruturando a base visual do site.</p>
                     <div class="links">
-                        <a href="https://www.linkedin.com/in/joaogabini?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="btn">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/joaogabini?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank" class="btn">LinkedIn</a>
                         <a href="https://github.com/JoaoGabini" target="_blank" class="btn">GitHub</a>
                     </div>
                 </div>
@@ -221,7 +276,8 @@
                     <p class="contribution"><strong>Contribuição:</strong> Desenvolvimento das páginas em HTML e coleta
                         dos dados que seriam exibidos no site.</p>
                     <div class="links">
-                        <a href="https://br.linkedin.com/in/juliana-correia-barbosa-59a86a387" target="_blank" class="btn">LinkedIn</a>
+                        <a href="https://br.linkedin.com/in/juliana-correia-barbosa-59a86a387" target="_blank"
+                            class="btn">LinkedIn</a>
                         <a href="https://github.com/juli1F" target="_blank" class="btn">GitHub</a>
                     </div>
                 </div>
@@ -241,7 +297,8 @@
                     <p class="contribution"><strong>Contribuição:</strong> Responsável pela coleta e organização dos
                         dados e pelo design da interface do site.</p>
                     <div class="links">
-                        <a href="https://www.linkedin.com/in/mariana-hangai-060865387/" target="_blank" class="btn">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/mariana-hangai-060865387/" target="_blank"
+                            class="btn">LinkedIn</a>
                         <a href="https://github.com/Marianastyle" target="_blank" class="btn">GitHub</a>
                     </div>
                 </div>
@@ -260,7 +317,8 @@
                     <p class="contribution"><strong>Contribuição:</strong> Desenvolvimento do HTML, colaboração no CSS e
                         participação na coleta e tratamento das informações apresentadas no site.</p>
                     <div class="links">
-                        <a href="https://www.linkedin.com/in/rebeca-santos-silva-6ba836387?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="btn">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/rebeca-santos-silva-6ba836387?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank" class="btn">LinkedIn</a>
                         <a href="https://github.com/rehsanva" target="_blank" class="btn">GitHub</a>
                     </div>
                 </div>
@@ -279,7 +337,8 @@
                     <p class="contribution"><strong>Contribuição:</strong> Desenvolvimento das páginas em HTML e apoio
                         na organização geral do projeto.</p>
                     <div class="links">
-                        <a href="https://www.linkedin.com/in/victoria-nunes-0011a6326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="btn">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/victoria-nunes-0011a6326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank" class="btn">LinkedIn</a>
                         <a href="https://github.com/victorianuness" target="_blank" class="btn">GitHub</a>
                     </div>
                 </div>
