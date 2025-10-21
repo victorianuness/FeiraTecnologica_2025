@@ -157,25 +157,18 @@ h1 {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 20px;
-    margin-bottom: 20px;
+    margin: 20px;
     flex: 1;
     min-width: 250px;
-    margin: 10px;
 }
-.card h2, ul li{
+.card h2{
     text-align: center;
-}
-#narcoticos .flexcard {
-    display: grid;
-    grid-template-columns: repeat;
-    gap: 20px;
 }
 #narcoticos ul li{
-
     padding: 20px;
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 10px;
-    text-align: center;
+    text-align:start;
     list-style: none;
 }
 #narcoticos .card1{
@@ -192,7 +185,7 @@ h1 {
     bottom: 1rem;
     padding: 0.6rem 0.9rem;
     border-radius: 999px;
-    background-color: #181c22;
+    background-color: #181c2260;
     border: 1px solid #ffffff;
     color: #ffffff;
     text-decoration: none;
@@ -204,7 +197,7 @@ h1 {
 }
 
 #sinopse article {
-    max-width: 850px;
+    max-width: 1200px;
     padding: 20px;
 }
 
@@ -248,7 +241,7 @@ h1 {
 }
 #autora .container1 img{
     width: 1000px;
-    height: 450px;
+    height: 400px;
     object-fit: cover;
     border-radius: 5%;
     margin-right: 20px;
@@ -264,13 +257,15 @@ grid-column-gap: 10px;
 grid-row-gap: 9px;
 
 }
+
 #narcoticos .card1 
 { grid-area: 1 / 1 / 3 / 3;
     background-color: rgba(255, 255, 255, 0.336);
     border-radius: 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 25px;
+    padding: 20px;
+    margin: 2px;
 }
 
 #narcoticos .card2 
@@ -279,7 +274,7 @@ grid-row-gap: 9px;
     border-radius: 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 15px;
+    padding: 20px;
 }
 
 #narcoticos .card3
@@ -288,7 +283,7 @@ grid-row-gap: 9px;
     border-radius: 20px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 15px;
+    padding: 20px;
 }
 
 #narcoticos .card4 
@@ -297,7 +292,7 @@ background-color: rgba(255, 255, 255, 0.336);
 border-radius: 20px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 border: 1px solid rgba(255, 255, 255, 0.3);
-padding: 15px;
+padding: 20px;
 }
 
 #narcoticos .card5
@@ -306,44 +301,233 @@ padding: 15px;
   border-radius: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 15px;
+  padding: 20px;
 }
 
-/*.parent {
-display: grid;
-grid-template-columns: repeat(8, 1fr);
-grid-template-rows: repeat(10, 1fr);
-grid-column-gap: 15px;
-grid-row-gap: 9px;
-display: flex;
+#personagens .parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
 
-.igor { 
-    grid-area: 1 / 1 / 6 / 3; 
-    background-color: rgba(255, 255, 255, 0.336);
-    border-radius: 20px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 15px;
+#personagens .parent article {
+    background-color: rgba(193, 218, 255, 0.418);
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.493);
 }
-.pai {
-    grid-area: 6 / 1 / 11 / 3;
+
+#personagens .parent article:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s;
+    box-shadow: 0 0 10px #b6d6f0;
+}  
+
+#personagens .parent h2 {
+    padding: 10px;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
 }
-.mae { 
-    grid-area: 1 / 3 / 6 / 5; 
+
+#personagens .parent p {
+    font-size: 20px;
+    text-align: justify;
 }
-.sergio { 
-    grid-area: 6 / 3 / 11 / 5; 
+
+#busqueajuda p{
+    margin: 20px;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
 }
-.cdf { 
-    grid-area: 1 / 5 / 6 / 7; 
+
+#busqueajuda h2{
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    font-family: Apple;
 }
-.karina { 
-    grid-area: 6 / 5 / 11 / 7; 
+
+#busqueajuda ul li{
+    margin: 20px;
+    font-size: 20px;
+    list-style: none;
+    text-align: justify;
+    color: white;
 }
-.tia { 
-    grid-area: 1 / 7 / 6 / 9; 
+
+#busqueajuda h3{
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    font-family: Apple;
 }
-.juliana { 
-    grid-area: 6 / 7 / 11 / 9; 
-}*/
+#busqueajuda ul li.ultimo{
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+    font-size: 70px;
+    font-family: Apple;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+}
+#busqueajuda ul li.ultimo a {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    color: white;
+    opacity: 1;
+    transition: transform 0.5s;
+}
+
+#busqueajuda ul li.ultimo a:hover{
+    transform: scale(1.07);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    
+    /* NAV BAR */
+    nav {
+        flex-direction: column; 
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0; 
+        text-align: center;
+        display: block; 
+    }
+    nav ul li .contato{
+        font-size: 15px;
+    }
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    /* HEADER */
+    header {
+        margin: 30px 10px;
+    }
+
+    header h1 {
+        font-size: 70px; 
+    }
+
+    header h2 {
+        font-size: 28px; 
+        text-align: center; 
+    }
+    
+    header .container {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    img {
+        width: 90%; 
+        max-width: 350px; 
+        margin: 20px auto 0;
+        display: block;
+    }
+
+    /* Títulos Gerais e Parágrafos */
+    h1 {
+        font-size: 55px;
+        margin: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    #sinopse h1 {
+        font-size: 55px;
+        margin-bottom: 20px;
+    }
+
+    #sinopse p {
+        font-size: 20px;
+        padding-left: 15px;
+    }
+
+    /* AUTORA */
+    #autora h2 {
+        font-size: 35px;
+        margin: 20px;
+    }
+
+    #autora p {
+        font-size: 18px;
+        margin: 0 10px 20px 10px;
+    }
+
+    #autora .container1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #autora .container1 img {
+        width: 100%; 
+        display: flex;
+        margin: auto 0;
+        height: auto; 
+        margin-right: 0;
+    }
+
+    #personagens h1 {
+        font-size: 55px;
+    }
+    
+    #personagens .parent {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    #personagens .parent h2 {
+        font-size: 24px;
+    }
+    
+    /* NARCÓTICOS (Grid) */
+    #narcoticos h2 {
+        font-size: 26px;
+    }
+    
+    #narcoticos .flexcard {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    #narcoticos .card1,
+    #narcoticos .card2,
+    #narcoticos .card3,
+    #narcoticos .card4,
+    #narcoticos .card5 {
+        grid-area: unset;
+        margin: 0;
+    }
+    
+    #busqueajuda ul li.ultimo {
+        padding: 20px;
+        font-size: 40px;
+    }
+
+    .topo{  
+        padding: 0.4rem 0.6rem;
+        font-size: 14px;
+        background-color: #181c2260;
+    }
+}

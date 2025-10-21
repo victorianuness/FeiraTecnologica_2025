@@ -156,29 +156,89 @@
         .victoria .card-header {
             background: linear-gradient(135deg, #c6a6ff, #835af1);
         }
-        .voltar {
+
+        /* From Uiverse.io by mrhyddenn */
+        .shadow__btn {
             position: absolute;
-            top: 20px;
-            left: 20px;
-            font-size: 30px;
-            text-decoration: none;
-            color: #4b4b4b;
-            background-color: #e9e2e2;
-            padding: 15px;
-            margin: 20px;
-            margin-left: 30px;
-            border-radius: 20%;
-            border: 2.25px solid #b0b6ec;
+            top: 30px;
+            left: 30px;
+            padding: 10px 20px;
+            border: none;
+            font-size: 17px;
+            color: #fff;
+            border-radius: 7px;
+            letter-spacing: 4px;
+            font-weight: 700;
+            transition: 0.5s;
+            transition-property: box-shadow;
+            cursor: pointer;
+            background: rgb(139, 193, 255);
         }
-        .voltar:hover{
-            background-color: #b0b6ec;
-            color: rgb(98, 125, 211);
+
+        .shadow__btn:hover {
+            box-shadow: 0 0 5px rgb(139, 193, 255),
+                0 0 25px rgb(139, 193, 255),
+                0 0 50px rgb(139, 193, 255),
+                0 0 100px rgb(139, 193, 255);
+        }
+
+        @media (min-width: 1201px) {
+            .devs-container {
+                grid-template-columns: repeat(auto-fit, minmax(340px, 400px));
+                justify-content: center;
+            }
+        }
+
+
+        @media (max-width: 1200px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .devs-container {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 30px;
+                width: 95%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+                margin-top: 80px;
+            }
+
+            p.subtitulo {
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+
+            .devs-container {
+                grid-template-columns: 1fr;
+                width: 90%;
+                gap: 25px;
+            }
+
+            .card {
+                min-height: auto;
+            }
+
+            .shadow__btn {
+                position: fixed;
+                top: 15px;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 8px 15px;
+                font-size: 14px;
+                letter-spacing: 2px;
+                z-index: 1000;
+            }
         }
     </style>
 </head>
 
 <body>
-    <a href="index.html" class="voltar">Voltar</a>
+    <button class="shadow__btn" onclick="window.location.href='index.html'">Voltar</button>
     <h1>Conheça os Desenvolvedores</h1>
     <p class="subtitulo">Equipe responsável pela criação, estilização e organização do projeto</p>
 
@@ -192,12 +252,13 @@
                 <div class="card-body">
                     <h2>João Gabini</h2>
                     <p class="role">Full-Stack</p>
-                    <p class="bio">Focado e prático</p>
+                    <p class="bio">Praticidade e eficiência na codificação.</p>
                     <p class="skills"><strong>Habilidades:</strong> HTML e CSS</p>
                     <p class="contribution"><strong>Contribuição:</strong> Desenvolvimento das páginas em HTML e
                         colaboração no CSS, estruturando a base visual do site.</p>
                     <div class="links">
-                        <a href="#" class="btn">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/joaogabini?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank" class="btn">LinkedIn</a>
                         <a href="https://github.com/JoaoGabini" target="_blank" class="btn">GitHub</a>
                     </div>
                 </div>
@@ -215,8 +276,9 @@
                     <p class="contribution"><strong>Contribuição:</strong> Desenvolvimento das páginas em HTML e coleta
                         dos dados que seriam exibidos no site.</p>
                     <div class="links">
-                        <a href="#" class="btn">LinkedIn</a>
-                        <a href="#" class="btn">GitHub</a>
+                        <a href="https://br.linkedin.com/in/juliana-correia-barbosa-59a86a387" target="_blank"
+                            class="btn">LinkedIn</a>
+                        <a href="https://github.com/juli1F" target="_blank" class="btn">GitHub</a>
                     </div>
                 </div>
             </div>
@@ -235,8 +297,9 @@
                     <p class="contribution"><strong>Contribuição:</strong> Responsável pela coleta e organização dos
                         dados e pelo design da interface do site.</p>
                     <div class="links">
-                        <a href="#" class="btn">LinkedIn</a>
-                        <a href="#" class="btn">GitHub</a>
+                        <a href="https://www.linkedin.com/in/mariana-hangai-060865387/" target="_blank"
+                            class="btn">LinkedIn</a>
+                        <a href="https://github.com/Marianastyle" target="_blank" class="btn">GitHub</a>
                     </div>
                 </div>
             </div>
@@ -254,7 +317,8 @@
                     <p class="contribution"><strong>Contribuição:</strong> Desenvolvimento do HTML, colaboração no CSS e
                         participação na coleta e tratamento das informações apresentadas no site.</p>
                     <div class="links">
-                        <a href="#" class="btn">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/rebeca-santos-silva-6ba836387?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank" class="btn">LinkedIn</a>
                         <a href="https://github.com/rehsanva" target="_blank" class="btn">GitHub</a>
                     </div>
                 </div>
@@ -273,7 +337,8 @@
                     <p class="contribution"><strong>Contribuição:</strong> Desenvolvimento das páginas em HTML e apoio
                         na organização geral do projeto.</p>
                     <div class="links">
-                        <a href="#" class="btn">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/victoria-nunes-0011a6326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank" class="btn">LinkedIn</a>
                         <a href="https://github.com/victorianuness" target="_blank" class="btn">GitHub</a>
                     </div>
                 </div>
