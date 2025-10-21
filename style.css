@@ -185,7 +185,7 @@ h1 {
     bottom: 1rem;
     padding: 0.6rem 0.9rem;
     border-radius: 999px;
-    background-color: #181c22;
+    background-color: #181c2260;
     border: 1px solid #ffffff;
     color: #ffffff;
     text-decoration: none;
@@ -385,4 +385,148 @@ padding: 20px;
 #busqueajuda ul li.ultimo a:hover{
     transform: scale(1.07);
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    
+    /* NAV BAR */
+    nav {
+        flex-direction: column; 
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0; 
+        text-align: center;
+        display: block; 
+    }
+    nav ul li .contato{
+        font-size: 15px;
+    }
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    /* HEADER */
+    header {
+        margin: 30px 10px;
+    }
+
+    header h1 {
+        font-size: 70px; 
+    }
+
+    header h2 {
+        font-size: 28px; 
+        text-align: center; 
+    }
+    
+    header .container {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    img {
+        width: 90%; 
+        max-width: 350px; 
+        margin: 20px auto 0;
+        display: block;
+    }
+
+    /* Títulos Gerais e Parágrafos */
+    h1 {
+        font-size: 55px;
+        margin: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    #sinopse h1 {
+        font-size: 55px;
+        margin-bottom: 20px;
+    }
+
+    #sinopse p {
+        font-size: 20px;
+        padding-left: 15px;
+    }
+
+    /* AUTORA */
+    #autora h2 {
+        font-size: 35px;
+        margin: 20px;
+    }
+
+    #autora p {
+        font-size: 18px;
+        margin: 0 10px 20px 10px;
+    }
+
+    #autora .container1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #autora .container1 img {
+        width: 100%; 
+        display: flex;
+        margin: auto 0;
+        height: auto; 
+        margin-right: 0;
+    }
+
+    #personagens h1 {
+        font-size: 55px;
+    }
+    
+    #personagens .parent {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    #personagens .parent h2 {
+        font-size: 24px;
+    }
+    
+    /* NARCÓTICOS (Grid) */
+    #narcoticos h2 {
+        font-size: 26px;
+    }
+    
+    #narcoticos .flexcard {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    #narcoticos .card1,
+    #narcoticos .card2,
+    #narcoticos .card3,
+    #narcoticos .card4,
+    #narcoticos .card5 {
+        grid-area: unset;
+        margin: 0;
+    }
+    
+    #busqueajuda ul li.ultimo {
+        padding: 20px;
+        font-size: 40px;
+    }
+
+    .topo{  
+        padding: 0.4rem 0.6rem;
+        font-size: 14px;
+        background-color: #181c2260;
+    }
 }
